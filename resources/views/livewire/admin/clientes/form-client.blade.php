@@ -11,7 +11,7 @@
 
         <div class="row">
 
-            <div class="form-group col-6">
+            <div class="form-group col-md-6">
                 <label for="board">Placa</label>
                 <input type="text" class="form-control" id="placa" placeholder="Placa" value="" wire:model.blur="form.placa">
                 @error('form.placa')
@@ -19,7 +19,7 @@
                 @enderror
             </div>
 
-            <div class="form-group col-6">
+            <div class="form-group col-md-6">
                 <label for="name">Nome</label>
                 <input type="text" class="form-control" placeholder="Nome" value="" wire:model.blur="form.nome">
 
@@ -30,7 +30,7 @@
         </div>
 
         <div class="row">
-            <div class="form-group col-4">
+            <div class="form-group col-md-4">
                 <label for="cpf">CPF</label>
             <input type="text" class="form-control" id="cpf" placeholder="CPF" value="" wire:model.blur="form.cpf">
 
@@ -39,7 +39,7 @@
             @enderror
             </div>
 
-            <div class="form-group col-4">
+            <div class="form-group col-md-4">
                 <label for="type_vehicle">Tipo de veiculo</label>
                 <select class="form-control" id="inputGroupSelect01" value="" wire:model.blur="form.tipoVeiculo">
                     <option value="">Selecione o tipo de veiculo</option>
@@ -48,7 +48,7 @@
                 </select>
 
             @error('form.tipoVeiculo')
-                <span class="text-muted text-danger font-weight-lighter"> {{$message}} </span>
+                <span class="text-muted text-danger fw--boldr"> {{$message}} </span>
             @enderror
             </div>
 
@@ -57,7 +57,7 @@
                     <a class="text-decoration-none text-white" href="/clients">Cancelar</a></button>
             </div>
 
-            <div class="form-group col-2 text-right">
+            <div class="form-group col-md-2 text-right">
                 <x-botaoSalvar />
             </div>
 
